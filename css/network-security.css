@@ -138,9 +138,9 @@ body{
 }
 
 section {
-    width: 80vw;
-    padding: 40px;
-    margin: 2.5rem auto;
+    width: 88vw;
+    padding: 30px;
+    margin: -6rem auto;
     border-radius: 14px;
     display: flex;
     flex-direction: column;
@@ -149,8 +149,7 @@ section {
 }
 
 section h1 {
-    margin-top: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
@@ -160,7 +159,7 @@ section > p {
 }
 
 .container > section:nth-child(5n + 1) {
-    margin-top: 200px;
+    margin-top: 150px;
     background-color: #C493FF;
     color: black;
 }
