@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+      </div>
+
+    <nav>
+        <img src="images/logo.png" alt="" class="logo">
+        <ul id="menu-links">
+            <li href="network-security.html">Home</li>
+            <li href="#services">Services</li>
+            <li>Projects</li>
+            <li>About Us</li>
+        </ul>
+        <button class="nav-btn">Get started <img src="images/arrow-white.png" alt=""></button>
+
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+    </nav>
+    <div class="header">
+        <div class="header-content">
+        <h1><span>CYBER</span><br><span>SECURITY</span></h1>
+        <div class="btn-container">
+            <button class="btn-dark">Request call back <img src="images/phone.png" alt=""></button>
+            <button class="btn-light">Know more <img src="images/arrow-black.png" alt=""></button>
+        </div>
+        <p>Passionate UI/UX designers with 10+ years of experience</p>
+    </div>
+
+        <img src="images/user.png" alt="" class="user-img">
+    </div>
+
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <p>We Offer Professional <br>Security Solutions</p>
+        <ul class="cards">
+
+          <li class="card">
+            <img src="images/shield.png" alt="img">
+            <h3>Network Security</h3>
+            <p>Network security defends against cyber threats by securing data and systems through tools like firewalls and encryption.</p>
+            <button onclick="window.location.href='network-security.html';" class="card-button">Learn More</button>
+          </li>
+
+          <li class="card">
+            <img src="images/server-storage.png" alt="img">
+            <h3>DataBase Security</h3>
+            <p>Database security safeguards data from unauthorized access and breaches through encryption and access controls.</p>
+            <button class="card-button">Learn More</button>
+          </li>
+
+          <li class="card">
+            <img src="images/seo-and-web.png" alt="img">
+            <h3>Web Security</h3>
+            <p>Web security safeguards online assets from cyber threats using techniques like encryption, firewalls, and secure coding.</p>
+            <button class="card-button">Learn More</button>
+          </li>
+
+          <li class="card">
+            <img src="images/privacy.png" alt="img">
+            <h3>Locker Security</h3>
+            <p>Locker security ensures the safety of belongings through robust locking systems and surveillance measures.</p>
+            <button class="card-button">Learn More</button>
+          </li>
+
+          <li class="card">
+            <img src="images/data-protection.png" alt="img">
+            <h3>Data Security</h3>
+            <p>Data security safeguards digital information from unauthorized access or alteration through encryption and access controls.</p>
+            <button class="card-button">Learn More</button>
+          </li>
+
+          <li class="card">
+            <img src="images/cloudsecurity.png" alt="img">
+            <h3>Cloud Security</h3>
+            <p>Illuminate your campsite with our reliable and energy-efficient camping lights.</p>
+            <button class="card-button">Learn More</button>
+          </li>
+
+        </ul>
+      </section>
+
+    <footer>
+      <section class="top">
+        <div class="links">
+          <div class="links-column">
+            <h2>Portfolio</h2>
+            <a>About</a>
+            <a>Skills</a>
+            <a>Attribute</a>
+            <a>Projects</a>
+            <a>Testimonials</a>
+          </div>
+          <div class="links-column">
+            <h2>Portfolio</h2>
+            <a>About</a>
+            <a>Skills</a>
+            <a>Attribute</a>
+            <a>Projects</a>
+            <a>Testimonials</a>
+          </div>
+          <div class="links-column socials-column">
+            <h2>Social Media</h2>
+            <p>
+              Follow me on social media to ...
+            </p>
+            <div class="socials">
+              <a class="fa-brands fa-instagram"></a>
+              <!--more-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bottom">
+        <p class="copyright">2024 ...</p>
+        <div class="legal">
+
+        </div>
+      </section>
+      
+      </footer>
+
+
+    <script>
+        let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links");
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+
+        window.onscroll = function(){
+            if(window.scrolly > 0){
+                navbar.style.background = '#eefff9';
+            }
+            else{
+                navbar.style.background = 'transparent'
+            }
+        }
+
+        window.addEventListener('load', function () {
+        var preloader = document.querySelector('.preloader');
+        preloader.classList.add('preload-finish');
+      });
+    </script>
+
+    <style>
+      .card-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid #845EC2;
+        outline: 2px;
+        border-radius: 40px;
+        color: #000;
+        cursor: pointer;
+        margin-top: 25px;
+        font-size: 1rem;
+        background: #FEF7FF;
+      }
+
+    </style>
+
+
+
+
+</body>
+</html>
