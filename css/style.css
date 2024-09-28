@@ -428,7 +428,6 @@ nav .logo{
 
 /* FOOTER START */
 
-/* General Footer Styling */
 footer {
     background-color: #05161A;
 }
@@ -577,7 +576,7 @@ footer .copyright {
 
     .bottom .links {
         flex-direction: column; /* Stack the columns vertically */
-        align-items: center;
+        align-items: left;
     }
 
     .bottom .links .links-column {
@@ -611,6 +610,7 @@ footer .copyright {
     footer .copyright {
         font-size: 12px;
         padding: 10px 5px;
+        text-align: center;
     }
 }
 
